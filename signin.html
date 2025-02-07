@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-[#F0F4FC] h-[100vh]">
+      <!-- nav-section -->
+      <div class="container mx-auto flex md:justify-end md:gap-10 md:p-5 md:items-center gap-5 pt-20 justify-center items-center">
+        <select class="bg-transparent" name="" id="">
+          <option  value="english">English</option>
+        </select>
+        <a href="signin.html">
+          <button class="border-none shadow-md rounded-lg p-1 md:w-24 text-sky-600 bg-white w-full">Sign in</button>
+        </a>
+        <a href="index.html">
+          <button
+            class=" text-sky-600"
+          >
+            Register
+          </button>
+        </a>
+      </div>
+      <!-- end of nav-section -->
+
+      <!-- hero-section -->
+
+      <div class="container mx-auto  flex justify-between mt-12">
+        <!-- first-child -->
+        <div class="hidden md:block space-y-5">
+          <h1 class="sarabun-thin font-bold text-5xl">
+            Welcome to [Social Network]
+          </h1>
+          <p class="font-normal text-[18px] w-[807px]">
+            Here, we believe that building a strong professional network begins
+            with your participation. We are delighted to offer a modern and
+            user-friendly service to ensure you have the best experience.
+          </p>
+          <a href="#">
+            <button class="text-sky-600 mt-5">Join Now!</button>
+          </a>
+          <div>
+            <img src="images/Frame.png" alt="" />
+          </div>
+        </div>
+        <!-- end of second-child -->
+        <!-- second-child -->
+        <div>
+          <div class="md:block space-y-5 p-10">
+            <h1 class="font-bold md:text-5xl md:text-start text-center text-3xl">Sign in</h1>
+            <form class="md:block space-y-5" action="">
+              <input class="md:hidden border px-4 py-2 rounded-md w-full p-4" type="text" name="" id="" placeholder="Full Name">
+              <input
+                class=" border px-4 py-2 md:w-72 rounded-md w-full p-4"
+                type="text"
+                placeholder="Enter Email or Phone"
+              />
+              <div
+                class="flex border items-center md:w-72 justify-between rounded-md bg-white w-full p4"
+              >
+                <input
+                  class="px-4 py-2 bg-transparent"
+                  type="password"
+                  placeholder="Password"
+                />
+                <div>
+                  <img src="images/fluent_eye-20-filled.png" alt="" />
+                </div>
+              </div>
+              <div class="flex md:w-72 md:text-right  w-80 text-end">
+                <a href="">
+                  <p class="text-[#6C737F] md:w-72 md:text-right w-80 text-end">
+                    Recover Password ?
+                  </p>
+                </a>
+              </div>
+            </form>
+            <a href="">
+              <button
+                class="border md:w-72 px-4 py-2 rounded-md mt-12 bg-sky-700 text-white w-full p-4"
+              >
+                Sign in
+              </button>
+            </a>
+          </div>
+          <!-- end of second-child -->
+          <div class="grid grid-cols-3 mt-5 items-center gap-3 p-10">
+            <span class="flex-1 bg-gray-400 h-0.5"></span>
+            <span class="flex-1 text-xs">Or Continue with</span>
+            <span class="flex-1 bg-gray-400 h-0.5"></span>
+          </div>
+          <!-- socials -->
+          <div class="mt-8 flex md:gap-5 justify-center items-center gap-8">
+            <div class="shadow-md p-4 rounded-md bg-white">
+              <img src="images/Logo Google.png" alt="" />
+            </div>
+            <div class="shadow-md p-3 rounded-md bg-white">
+              <img src="images/Logo.png" alt="" />
+            </div>
+            <div class="shadow-md p-4 rounded-md bg-white">
+              <img src="images/Vector.png" alt="" />
+            </div>
+            <div class="shadow-md p-4 rounded-md bg-white">
+              <img src="images/Logo (1).png" alt="" />
+            </div>
+          </div>
+          <!-- end of socials -->
+        </div>
+      </div>
+
+      <!-- end of hero-section -->
+      <!-- footer-nav -->
+      <div class="md:block mt-40 border-none p-3 bg-white shadow-xl hidden">
+        <footer class="container mx-auto flex justify-between">
+          <div class="flex gap-3 items-center text-neutral-600">
+            <div>
+              <img src="images/Frame (1).png" alt="" />
+            </div>
+            <p class="text-xs">© 2024</p>
+          </div>
+          <div class="text-xs flex gap-7 text-neutral-600">
+            <a href="#">About</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Copyright Policy</a>
+            <a href="#">Brand Policy</a>
+            <a href="#">Visitor Controls</a>
+          </div>
+        </footer>
+      </div>
+      <!-- end of footer-nav -->
+    </div>
+  </body>
+</html>
