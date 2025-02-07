@@ -16,16 +16,16 @@
   <body>
     <div class="bg-[#F0F4FC]">
       <!-- nav-section -->
-      <div class="container mx-auto flex justify-end gap-10 p-5 items-center">
+      <div class="container mx-auto flex md:justify-end md:gap-10 md:p-5 md:items-center gap-5 pt-20 justify-center items-center">
         <select class="bg-transparent" name="" id="">
-          <option value="english">English</option>
+          <option  value="english">English</option>
         </select>
-        <a href="">
+        <a href="signin.html">
           <button class="text-sky-600">Sign in</button>
         </a>
-        <a href="">
+        <a href="signin.html">
           <button
-            class="border-none shadow-md rounded-lg p-1 w-24 text-sky-600 bg-white"
+            class="border-none shadow-md rounded-lg p-1 md:w-24 text-sky-600 bg-white w-full"
           >
             Register
           </button>
@@ -35,10 +35,12 @@
 
       <!-- hero-section -->
 
-      <div class="container mx-auto flex justify-between mt-12">
+      <div class="container mx-auto  flex justify-between mt-12">
         <!-- first-child -->
-        <div class="space-y-5">
-          <h1 class="sarabun-thin font-bold text-5xl">Welcome to [Social Network]</h1>
+        <div class="hidden md:block space-y-5">
+          <h1 class="sarabun-thin font-bold text-5xl">
+            Welcome to [Social Network]
+          </h1>
           <p class="font-normal text-[18px] w-[807px]">
             Here, we believe that building a strong professional network begins
             with your participation. We are delighted to offer a modern and
@@ -54,16 +56,17 @@
         <!-- end of second-child -->
         <!-- second-child -->
         <div>
-          <div class="space-y-5">
-            <h1 class="font-bold text-5xl">Sign in</h1>
-            <form class="space-y-5" action="">
+          <div class="md:block space-y-5 p-10">
+            <h1 class="font-bold md:text-5xl md:text-start text-center text-3xl">Sign in</h1>
+            <form class="md:block space-y-5" action="">
+              <input class="md:hidden border px-4 py-2 rounded-md w-full p-4" type="text" name="" id="" placeholder="Full Name">
               <input
-                class="border px-4 py-2 w-72 rounded-md"
+                class=" border px-4 py-2 md:w-72 rounded-md w-full p-4"
                 type="text"
                 placeholder="Enter Email or Phone"
               />
               <div
-                class="flex border items-center w-72 justify-between rounded-md bg-white"
+                class="flex border items-center md:w-72 justify-between rounded-md bg-white w-full p4"
               >
                 <input
                   class="px-4 py-2 bg-transparent"
@@ -76,15 +79,17 @@
               </div>
               <div class="flex w-72 text-right">
                 <a href="">
-                  <p class="text-[#6C737F] w-72 text-right">Recover Password ?</p>
+                  <p class="text-[#6C737F] w-72 text-right">
+                    Recover Password ?
+                  </p>
                 </a>
               </div>
             </form>
             <a href="">
               <button
-                class="border w-72 px-4 py-2 rounded-md mt-12 bg-sky-700 text-white"
+                class="border md:w-72 px-4 py-2 rounded-md mt-12 bg-sky-700 text-white w-full p-4"
               >
-                Sign in
+                Register
               </button>
             </a>
           </div>
@@ -92,10 +97,10 @@
           <div class="grid grid-cols-3 mt-5 items-center gap-3">
             <span class="flex-1 bg-gray-400 h-0.5"></span>
             <span class="flex-1 text-xs">Or Continue with</span>
-            <span class="flex-1 bg-gray-400 h-0.5 "></span>
+            <span class="flex-1 bg-gray-400 h-0.5"></span>
           </div>
           <!-- socials -->
-          <div class="mt-8 flex gap-5">
+          <div class="mt-8 flex md:gap-5 justify-center items-center gap-8">
             <div class="shadow-md p-4 rounded-md bg-white">
               <img src="images/Logo Google.png" alt="" />
             </div>
@@ -114,6 +119,27 @@
       </div>
 
       <!-- end of hero-section -->
+      <!-- footer-nav -->
+      <div class="md:block mt-40 border-none p-3 bg-white shadow-xl hidden">
+        <footer class="container mx-auto flex justify-between">
+          <div class="flex gap-3 items-center text-neutral-600">
+            <div>
+              <img src="images/Frame (1).png" alt="" />
+            </div>
+            <p class="text-xs">© 2024</p>
+          </div>
+          <div class="text-xs flex gap-7 text-neutral-600">
+            <a href="#">About</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Copyright Policy</a>
+            <a href="#">Brand Policy</a>
+            <a href="#">Visitor Controls</a>
+          </div>
+        </footer>
+      </div>
+      <!-- end of footer-nav -->
     </div>
   </body>
 </html>
