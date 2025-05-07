@@ -16,26 +16,28 @@
   <body>
     <div class="bg-[#F0F4FC] h-[100vh]">
       <!-- nav-section -->
-      <div class="container mx-auto flex md:justify-end md:gap-10 md:p-5 md:items-center gap-5 pt-20 justify-center items-center">
+      <div
+        class="container mx-auto flex md:justify-end md:gap-10 md:p-5 md:items-center gap-5 pt-20 justify-center items-center"
+      >
         <select class="bg-transparent" name="" id="">
-          <option  value="english">English</option>
+          <option value="english">English</option>
         </select>
         <a href="signin.html">
-          <button class="border-none shadow-md rounded-lg p-1 md:w-24 text-sky-600 bg-white w-full">Sign in</button>
+          <button
+            class="border-none shadow-md rounded-lg p-1 md:w-24 text-sky-600 bg-white w-full"
+          >
+            Sign in
+          </button>
         </a>
         <a href="index.html">
-          <button
-            class=" text-sky-600"
-          >
-            Register
-          </button>
+          <button class="text-sky-600">Register</button>
         </a>
       </div>
       <!-- end of nav-section -->
 
       <!-- hero-section -->
 
-      <div class="container mx-auto  flex justify-between mt-12">
+      <div class="container mx-auto flex justify-between mt-12">
         <!-- first-child -->
         <div class="hidden md:block space-y-5">
           <h1 class="sarabun-thin font-bold text-5xl">
@@ -57,11 +59,22 @@
         <!-- second-child -->
         <div>
           <div class="md:block space-y-5 p-10">
-            <h1 class="font-bold md:text-5xl md:text-start text-center text-3xl">Sign in</h1>
-            <form class="md:block space-y-5" action="">
-              <input class="md:hidden border px-4 py-2 rounded-md w-full p-4" type="text" name="" id="" placeholder="Full Name">
+            <h1
+              class="font-bold md:text-5xl md:text-start text-center text-3xl"
+            >
+              Sign in
+            </h1>
+            <form class="md:block space-y-5" action="#" id="loginForm">
               <input
-                class=" border px-4 py-2 md:w-72 rounded-md w-full p-4"
+                class="md:hidden border px-4 py-2 rounded-md w-full p-4"
+                type="text"
+                name=""
+                
+                placeholder="Full Name"
+              />
+              <input
+                id="email"
+                class="outline-none px-4 py-2 md:w-72 rounded-md w-full p-4"
                 type="text"
                 placeholder="Enter Email or Phone"
               />
@@ -69,7 +82,8 @@
                 class="flex border items-center md:w-72 justify-between rounded-md bg-white w-full p4"
               >
                 <input
-                  class="px-4 py-2 bg-transparent"
+                  id="password"
+                  class="px-4 py-2 bg-transparent outline-none"
                   type="password"
                   placeholder="Password"
                 />
@@ -77,21 +91,23 @@
                   <img src="images/fluent_eye-20-filled.png" alt="" />
                 </div>
               </div>
-              <div class="flex md:w-72 md:text-right  w-80 text-end">
+              <div class="flex md:w-72 md:text-right w-80 text-end">
                 <a href="">
                   <p class="text-[#6C737F] md:w-72 md:text-right w-80 text-end">
                     Recover Password ?
                   </p>
                 </a>
               </div>
+              <input
+                type="submit"
+                value="Login"
+                id="signbtn"
+                class="border md:w-72 px-4 py-2 rounded-md mt-12 text-xl bg-sky-700 text-white w-full p-4"
+              />
             </form>
-            <a href="">
-              <button
-                class="border md:w-72 px-4 py-2 rounded-md mt-12 bg-sky-700 text-white w-full p-4"
-              >
-                Sign in
-              </button>
-            </a>
+            
+              
+            
           </div>
           <!-- end of second-child -->
           <div class="grid grid-cols-3 mt-5 items-center gap-3 p-10">
@@ -141,5 +157,6 @@
       </div>
       <!-- end of footer-nav -->
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
